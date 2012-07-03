@@ -1,0 +1,28 @@
+<br class="clear">
+	<div id="content">
+	  <div class="fleft">
+		<h1>Это стартовая страница - заголовок из базы</h1>
+		<p>Тут должен быть текст из базы</p>
+	</div>
+
+	<div class="fright">
+		<h2>Свежие новости</h2>	
+	     <% content_for :body do %>
+           <ul id="news" class="nobull">
+               <% @news_items.each do |news_item| %>
+               <li>
+               	<%= image_fu news_item.photo, "50x50" %>
+                <%= link_to news_item.name, refinery.news_items_news_item_path(news_item) %>
+              </li>
+            <% end %>
+           </ul>
+         <% end %> 
+
+       <%= render '/refinery/content_page' %>
+       <br class="clear">
+   </div>
+  <br class="clear">
+ </div>
+ <div id="push"></div>
+ <div id="footer">Подвал</div>
+ 
