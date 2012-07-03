@@ -27,7 +27,8 @@ end
 end
 
 gem 'jquery-rails'
-
+gem 'fog'
+gem 'acts_as_indexed'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
