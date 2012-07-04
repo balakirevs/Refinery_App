@@ -1,11 +1,11 @@
 <% content_for :body do %> 
   <h1>
       <%=raw @news_item.name %>
-    </h1>
+  </h1>
     <p>
       <%=raw @news_item.news_date %>
     </p>
-<hr size=1> 
+  <hr size=1> 
       <%= image_fu @news_item.photo, "100x100", class: "imgst"  %>
    
   <section>

@@ -11,7 +11,7 @@
            <ul id="news" class="nobull">
                <% @news_items.each do |news_item| %>
                <li>
-               	<%= image_fu news_item.photo, "50x50" %>
+               	<%= image_fu news_item.photo, "70x70" %>
                 <%= link_to news_item.name, refinery.news_items_news_item_path(news_item) %>
               </li>
             <% end %>
