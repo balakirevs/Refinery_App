@@ -52,6 +52,6 @@ gem 'refinerycms-i18n'
 #  gem 'refinerycms-blog', '~> 2.0.0'
 #  gem 'refinerycms-inquiries', '~> 2.0.0'
 #  gem 'refinerycms-search', '~> 2.0.0'
-#  gem 'refinerycms-page-images', '~> 2.0.0'
+gem 'refinerycms-page-images'
 
 gem 'refinerycms-news_items', :path => 'vendor/extensions'

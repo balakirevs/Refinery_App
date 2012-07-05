@@ -6,7 +6,8 @@
       <%=raw @news_item.news_date %>
     </p>
   <hr size=1> 
-      <%= image_fu @news_item.photo, "100x100", class: "imgst"  %>
+      
+   <%= link_to image_tag(@news_item.photo.thumbnail("70x70#c").url), @news_item.photo.thumbnail("30x30").url %>
    
   <section>
     <p>
