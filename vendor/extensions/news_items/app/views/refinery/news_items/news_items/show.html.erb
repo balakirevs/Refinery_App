@@ -7,7 +7,7 @@
     </p>
   <hr size=1> 
 
-  <div class="iconf">
+  <div class="imgcont">
     <% @news_items.each do |news_item| %>
       <%= link_to image_tag(news_item.photo.thumbnail("200x150#c").url), news_item.photo.thumbnail("70x70").url %> 
     <% end %>

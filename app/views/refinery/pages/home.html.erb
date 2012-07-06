@@ -1,4 +1,5 @@
-<br class="clear">
+<% content_for :body do %>
+ <br class="clear">
 	<div id="content">
 	  <div class="fleft">
 		  <h1>Это стартовая страница - заголовок из базы</h1>
@@ -7,7 +8,7 @@
 
 	<div class="fright">
 		<h2>Свежие новости</h2>	
-	     <% content_for :body do %>
+	     
           <ul id="news" class="nobull">
             <% @news_items.each do |news_item| %>
               <li>
@@ -17,7 +18,7 @@
               </li>
             <% end %>
           </ul>
-        <% end %> 
+<% end %> 
         
       <%= render '/refinery/content_page' %>
          <div id="push"></div>
