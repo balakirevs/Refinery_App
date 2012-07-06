@@ -9,7 +9,7 @@
 
   <div class="imgcont">
     <% @news_items.each do |news_item| %>
-      <%= link_to image_tag(news_item.photo.thumbnail("200x150#c").url), news_item.photo.thumbnail("70x70").url %> 
+      <%= link_to image_tag(news_item.photo.thumbnail("180x130#c").url), news_item.photo.thumbnail("70x70").url %> 
     <% end %>
   </div> 
     <p>
@@ -27,5 +27,6 @@
         </li>
       <% end %>
 <% end %> 
-
 <%= render '/refinery/content_page' %>
+
+
