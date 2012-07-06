@@ -3,6 +3,7 @@
   <% site_bar = render('/refinery/site_bar', :head => true) -%>
   <%= render '/refinery/head' %>
   <body>
+    <div class="wrapper">
     <%= site_bar -%>
     <%= render '/refinery/ie6check' if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
     <div id="page_container">
@@ -17,6 +18,7 @@
       </footer>
     </div>
     <%= render '/refinery/javascripts' %>
+  </div>
     <div id="footer">Подвал</div>
   </body>
 
