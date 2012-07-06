@@ -55,3 +55,4 @@ gem 'refinerycms-i18n'
 gem 'refinerycms-page-images'
 
 gem 'refinerycms-news_items', :path => 'vendor/extensions'
+gem 'refinerycms-portfolio', :git => 'git://github.com/resolve/refinerycms-portfolio.git', :branch => '2-0-stable'

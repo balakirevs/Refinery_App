@@ -6,27 +6,25 @@
       <%=raw @news_item.news_date %>
     </p>
   <hr size=1> 
-      
-   <%= link_to image_tag(@news_item.photo.thumbnail("70x70#c").url), @news_item.photo.thumbnail("30x30").url %>
-   
-  <section>
+
+  <div class="iconf">
+    <% @news_items.each do |news_item| %>
+      <%= link_to image_tag(news_item.photo.thumbnail("200x150#c").url), news_item.photo.thumbnail("70x70").url %> 
+    <% end %>
+  </div> 
     <p>
       <%=raw @news_item.description %>
-    </p>
-  </section>  
+    </p> 
 <% end %>
 
 <% content_for :side_body do %>
-  <aside>
-    <h2><%= t('Другие новости') %></h2>
-    <ul id="news_items">
+    <h2><%= 'Другие новости' %></h2>
+    <ul>
       <% @news_items.each do |news_item| %>
         <li>
           <%= link_to news_item.name, refinery.news_items_news_item_path(news_item) %>
         </li>
       <% end %>
-    </ul>
-  </aside>
 <% end %> 
 
 <%= render '/refinery/content_page' %>

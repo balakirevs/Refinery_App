@@ -11,3 +11,6 @@ Refinery::Pages::Engine.load_seed
 
 # Added by Refinery CMS News Items extension
 Refinery::NewsItems::Engine.load_seed
+
+# Added by Refinery CMS Portfolio Engine
+Refinery::Portfolio::Engine.load_seed
