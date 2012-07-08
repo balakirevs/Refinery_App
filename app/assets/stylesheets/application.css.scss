@@ -10,12 +10,6 @@ html, body { height: 100%; }
   width:990px;
 }
 
-.footer, .push {
-  width:990px;
-  margin: 0 auto;
-  height: 140px; /* .push äîëæåí áûòü òîé æå âûñîòû, ÷òî è .footer */
-  padding-top:10px;
-}
 
 body{
   background:#fff;
@@ -67,17 +61,17 @@ body{
 }
 
 .imgcont{
-  #float:left; 
-  #margin: 0 0 20px 0; 
-  #width:250px;
+  float:left; 
+  margin: 0 0 20px 0; 
+  width:250px;
 
-  float: left;
-  margin: 0 0 20px 0;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 20px;
-  margin-left: 0px;
-  width: 250px;
+  #float: left;
+  #margin: 0 0 20px 0;
+  #margin-top: 0px;
+  #margin-right: 0px;
+  #margin-bottom: 20px;
+  #margin-left: 0px;
+  #width: 250px;
 }
 
 
