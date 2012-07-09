@@ -1,5 +1,4 @@
-<% logo = image_tag "logo.jpg" %>
-          <%= link_to logo, refinery.root_path %>
+
 <%
   # Collect the root items.
   # ::Refinery::Menu is smart enough to remember all of the items in the original collection.
@@ -11,6 +10,8 @@
 -%>
 <div class="header">
   <ul id="nav">
+    <% logo = image_tag "logo.jpg" %>
+          <%= link_to logo, refinery.root_path %>
     <%= render :partial => '/refinery/menu_branch', :collection => roots,
                :locals => {
                  :hide_children => hide_children,
